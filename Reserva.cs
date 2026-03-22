@@ -58,7 +58,6 @@ namespace GestionReservasHotel
             }
 
             //Regla 4: El documento no puede contener una letra.
-            // Usamos LINQ para revisar que cada caracter sea un número.
             if (!DocumentoCliente.All(char.IsDigit))
             {
                 throw new Exception("El documento solo puede contener números, no se permiten letras ni caracteres.");
